@@ -1,56 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarea_Personajes_Star_Wars</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Tarea_Personajes_Star_Wars</title>   
 </head>
 <body>
-    <main>
-        <header>
-            <nav class="navbar navbar-expand-sm bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">API de Personajes Star Wars</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Búsqueda por nombre</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="listado.html">Listado</a>
-                            </li>
-                        </ul>
+    <main class="container">
+        <div class="row" id="lista1">
+            <div class="col-3">
+                <div class="card" id="card1">
+                    <div class="card-body">
+                      This is some text within a card body.
                     </div>
                 </div>
-            </nav>
-        </header>
-        <section class="container pt-3">
-            <form id="formulario" action="">
-                <div class="row">
-                    <div class="col-4">
-                        <label for="txt-busqueda" class="form-label">Nombre personaje</label>
-                        <input class="form-control" type="txt" id="txt-busqueda">
-                    </div>
-                    <div class="col-2 pt-4">
-                        <button class="btn btn-primary mt-2 w-100">Buscar</button>
+            </div>
+        </div>
+        <div class="row" id="lista2">
+            <div class="col-3">
+                <div class="card" id="card2">
+                    <div class="card-body">
+                      This is some text within a card body.
                     </div>
                 </div>
-            </form>
-        </section>
+            </div>
+        </div>
+        <div class="row" id="lista3">
+            <div class="col-3">
+                <div class="card" id="card3">
+                    <div class="card-body">
+                      This is some text within a card body.
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="./assets/js/busqueda.js" type="module"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
-
 </html>
