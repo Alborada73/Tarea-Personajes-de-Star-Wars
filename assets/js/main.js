@@ -2,9 +2,9 @@ const url = `https://swapi.dev/api/people`
 
 const consultarAPI = (url) => {
     return new Promise((resolve, reject) => (
-        fetch(url).then(resp => resp.json()).then(data => {
-            console.log(data);
-            resolve(data)
+        fetch(url)
+        .then(resp => resp.json())
+        .then(data => {console.log(data);resolve(data)
          })
     ))
     
