@@ -45,6 +45,7 @@ function* generador1(){
           <p class="card-text">${resp.name} ${resp.height} ${resp.mass}</div><small class="text-body-secondary"></div></small></p>
         </div>
     </div>`));
+
     
     
    
@@ -198,7 +199,7 @@ function* generador3(){
     yield consultarAPI(`${url}/12?format=json`).then(resp => $("#lista3").append(`<div class="card md-3" style="max-width: 540px;">
     <div class="row">
       <div class="col-3">
-        <img src="./assets/img/boton_verde.png" class="img-aling-fluid rounded-start" alt="12 - 17">
+        <img src="./assets/img/boton_azul.png" class="img-aling-fluid rounded-start" alt="12 - 17">
       </div>
     <div class="col-md-5">
         <div class="card-body" id="card1">
@@ -214,7 +215,7 @@ function* generador3(){
     yield consultarAPI(`${url}/13?format=json`).then(resp => $("#lista3").append(`<div class="card md-3" style="max-width: 540px;">
     <div class="row">
       <div class="col-3">
-        <img src="./assets/img/boton_verde.png" class="img-aling-fluid rounded-start" alt="12 - 17">
+        <img src="./assets/img/boton_azul.png" class="img-aling-fluid rounded-start" alt="12 - 17">
       </div>
     <div class="col-md-5">
         <div class="card-body" id="card1">
@@ -229,7 +230,7 @@ function* generador3(){
     yield consultarAPI(`${url}/14?format=json`).then(resp => $("#lista3").append(`<div class="card md-3" style="max-width: 540px;">
     <div class="row">
       <div class="col-3">
-        <img src="./assets/img/boton_verde.png" class="img-aling-fluid rounded-start" alt="12 - 17">
+        <img src="./assets/img/boton_azul.png" class="img-aling-fluid rounded-start" alt="12 - 17">
       </div>
     <div class="col-md-5">
         <div class="card-body" id="card1">
@@ -245,7 +246,7 @@ function* generador3(){
     yield consultarAPI(`${url}/15?format=json`).then(resp => $("#lista3").append(`<div class="card md-3" style="max-width: 540px;">
     <div class="row">
       <div class="col-3">
-        <img src="./assets/img/boton_verde.png" class="img-aling-fluid rounded-start" alt="12 - 17">
+        <img src="./assets/img/boton_azul.png" class="img-aling-fluid rounded-start" alt="12 - 17">
       </div>
     <div class="col-md-5">
         <div class="card-body" id="card1">
@@ -259,7 +260,7 @@ function* generador3(){
     yield consultarAPI(`${url}/16?format=json`).then(resp => $("#lista3").append(`<div class="card md-3" style="max-width: 540px;">
     <div class="row">
       <div class="col-3">
-        <img src="./assets/img/boton_verde.png" class="img-aling-fluid rounded-start" alt="12 - 17">
+        <img src="./assets/img/boton_azul.png" class="img-aling-fluid rounded-start" alt="12 - 17">
       </div>
     <div class="col-md-5">
         <div class="card-body" id="card1">
@@ -273,7 +274,7 @@ function* generador3(){
     yield consultarAPI(`${url}/17?format=json`).then(resp => $("#lista3").append(`<div class="card md-3" style="max-width: 540px;">
     <div class="row">
       <div class="col-3">
-        <img src="./assets/img/boton_verde.png" class="img-aling-fluid rounded-start" alt="12 - 17">
+        <img src="./assets/img/boton_azul.png" class="img-aling-fluid rounded-start" alt="12 - 17">
       </div>
     <div class="col-md-5">
         <div class="card-body" id="card1">
