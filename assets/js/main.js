@@ -102,21 +102,187 @@ function* generador1(){
 
 
 function* generador2(){
-    yield consultarAPI(`${url}/6?format=json`).then(resp => $("#lista2").append(`<div class="card">${resp.name} ${resp.height} ${resp.mass}</div>`));
-    yield consultarAPI(`${url}/7?format=json`).then(resp => $("#lista2").append(`<div class="card">${resp.name} ${resp.height} ${resp.mass}</div>`));
-    yield consultarAPI(`${url}/8?format=json`).then(resp => $("#lista2").append(`<div class="card">${resp.name} ${resp.height} ${resp.mass}</div>`));
-    yield consultarAPI(`${url}/9?format=json`).then(resp => $("#lista2").append(`<div class="card">${resp.name} ${resp.height} ${resp.mass}</div>`));
-    yield consultarAPI(`${url}/10?format=json`).then(resp => $("#lista2").append(`<div class="card">${resp.name} ${resp.height} ${resp.mass}</div>`));
-    yield consultarAPI(`${url}/11?format=json`).then(resp => $("#lista2").append(`<div class="card">${resp.name} ${resp.height} ${resp.mass}</div>`));
+
+    yield consultarAPI(`${url}/6?format=json`).then(resp => $("#lista2").append(`<div class="card md-3" style="max-width: 540px;">
+    <div class="row">
+      <div class="col-3">
+        <img src="./assets/img/boton_verde.png" class="img-aling-fluid rounded-start" alt="7 - 11">
+      </div>
+    <div class="col-md-5">
+        <div class="card-body" id="card1">
+          <h5 class="card-title"><strong>${resp.name}</strong></h5>
+          <p class="card-text"></p>
+          <p class="card-text">${resp.name} ${resp.height} ${resp.mass}</div><small class="text-body-secondary"></div></small></p>
+        </div>
+    </div>`));
+    
+  
+
+
+
+    yield consultarAPI(`${url}/7?format=json`).then(resp => $("#lista2").append(`<div class="card md-3" style="max-width: 540px;">
+    <div class="row">
+      <div class="col-3">
+        <img src="./assets/img/boton_verde.png" class="img-aling-fluid rounded-start" alt="7 - 11">
+      </div>
+    <div class="col-md-5">
+        <div class="card-body" id="card1">
+          <h5 class="card-title"><strong>${resp.name}</strong></h5>
+          <p class="card-text"></p>
+          <p class="card-text">${resp.name} ${resp.height} ${resp.mass}</div><small class="text-body-secondary"></div></small></p>
+        </div>
+    </div>`));
+    
+   
+    yield consultarAPI(`${url}/8?format=json`).then(resp => $("#lista2").append(`<div class="card md-3" style="max-width: 540px;">
+    <div class="row">
+      <div class="col-3">
+        <img src="./assets/img/boton_verde.png" class="img-aling-fluid rounded-start" alt="7 - 11">
+      </div>
+    <div class="col-md-5">
+        <div class="card-body" id="card1">
+          <h5 class="card-title"><strong>${resp.name}</strong></h5>
+          <p class="card-text"></p>
+          <p class="card-text">${resp.name} ${resp.height} ${resp.mass}</div><small class="text-body-secondary"></div></small></p>
+        </div>
+    </div>`));
+    
+    
+  
+    yield consultarAPI(`${url}/9?format=json`).then(resp => $("#lista2").append(`<div class="card md-3" style="max-width: 540px;">
+    <div class="row">
+      <div class="col-3">
+        <img src="./assets/img/boton_verde.png" class="img-aling-fluid rounded-start" alt="7 - 11">
+      </div>
+    <div class="col-md-5">
+        <div class="card-body" id="card1">
+          <h5 class="card-title"><strong>${resp.name}</strong></h5>
+          <p class="card-text"></p>
+          <p class="card-text">${resp.name} ${resp.height} ${resp.mass}</div><small class="text-body-secondary"></div></small></p>
+        </div>
+    </div>`));
+    
+   
+    yield consultarAPI(`${url}/10?format=json`).then(resp => $("#lista2").append(`<div class="card md-3" style="max-width: 540px;">
+    <div class="row">
+      <div class="col-3">
+        <img src="./assets/img/boton_verde.png" class="img-aling-fluid rounded-start" alt="7 - 11">
+      </div>
+    <div class="col-md-5">
+        <div class="card-body" id="card1">
+          <h5 class="card-title"><strong>${resp.name}</strong></h5>
+          <p class="card-text"></p>
+          <p class="card-text">${resp.name} ${resp.height} ${resp.mass}</div><small class="text-body-secondary"></div></small></p>
+        </div>
+    </div>`));
+    
+    
+    
+    yield consultarAPI(`${url}/11?format=json`).then(resp => $("#lista2").append(`<div class="card md-3" style="max-width: 540px;">
+    <div class="row">
+      <div class="col-3">
+        <img src="./assets/img/boton_verde.png" class="img-aling-fluid rounded-start" alt="7 - 11">
+      </div>
+    <div class="col-md-5">
+        <div class="card-body" id="card1">
+          <h5 class="card-title"><strong>${resp.name}</strong></h5>
+          <p class="card-text"></p>
+          <p class="card-text">${resp.name} ${resp.height} ${resp.mass}</div><small class="text-body-secondary"></div></small></p>
+        </div>
+    </div>`));
+    
+    
 }
 
 function* generador3(){
-    yield consultarAPI(`${url}/12?format=json`).then(resp => $("#lista3").append(`<div class="card">${resp.name} ${resp.height} ${resp.mass}</div>`));
-    yield consultarAPI(`${url}/13?format=json`).then(resp => $("#lista3").append(`<div class="card">${resp.name} ${resp.height} ${resp.mass}</div>`));
-    yield consultarAPI(`${url}/14?format=json`).then(resp => $("#lista3").append(`<div class="card">${resp.name} ${resp.height} ${resp.mass}</div>`));
-    yield consultarAPI(`${url}/15?format=json`).then(resp => $("#lista3").append(`<div class="card">${resp.name} ${resp.height} ${resp.mass}</div>`));
-    yield consultarAPI(`${url}/16?format=json`).then(resp => $("#lista3").append(`<div class="card">${resp.name} ${resp.height} ${resp.mass}</div>`));
-    yield consultarAPI(`${url}/17?format=json`).then(resp => $("#lista3").append(`<div class="card">${resp.name} ${resp.height} ${resp.mass}</div>`));
+    yield consultarAPI(`${url}/12?format=json`).then(resp => $("#lista3").append(`<div class="card md-3" style="max-width: 540px;">
+    <div class="row">
+      <div class="col-3">
+        <img src="./assets/img/boton_verde.png" class="img-aling-fluid rounded-start" alt="12 - 17">
+      </div>
+    <div class="col-md-5">
+        <div class="card-body" id="card1">
+          <h5 class="card-title"><strong>${resp.name}</strong></h5>
+          <p class="card-text"></p>
+          <p class="card-text">${resp.name} ${resp.height} ${resp.mass}</div><small class="text-body-secondary"></div></small></p>
+        </div>
+    </div>`));
+    
+    
+   
+
+    yield consultarAPI(`${url}/13?format=json`).then(resp => $("#lista3").append(`<div class="card md-3" style="max-width: 540px;">
+    <div class="row">
+      <div class="col-3">
+        <img src="./assets/img/boton_verde.png" class="img-aling-fluid rounded-start" alt="12 - 17">
+      </div>
+    <div class="col-md-5">
+        <div class="card-body" id="card1">
+          <h5 class="card-title"><strong>${resp.name}</strong></h5>
+          <p class="card-text"></p>
+          <p class="card-text">${resp.name} ${resp.height} ${resp.mass}</div><small class="text-body-secondary"></div></small></p>
+        </div>
+    </div>`));
+    
+   
+
+    yield consultarAPI(`${url}/14?format=json`).then(resp => $("#lista3").append(`<div class="card md-3" style="max-width: 540px;">
+    <div class="row">
+      <div class="col-3">
+        <img src="./assets/img/boton_verde.png" class="img-aling-fluid rounded-start" alt="12 - 17">
+      </div>
+    <div class="col-md-5">
+        <div class="card-body" id="card1">
+          <h5 class="card-title"><strong>${resp.name}</strong></h5>
+          <p class="card-text"></p>
+          <p class="card-text">${resp.name} ${resp.height} ${resp.mass}</div><small class="text-body-secondary"></div></small></p>
+        </div>
+    </div>`));
+    
+    
+    
+
+    yield consultarAPI(`${url}/15?format=json`).then(resp => $("#lista3").append(`<div class="card md-3" style="max-width: 540px;">
+    <div class="row">
+      <div class="col-3">
+        <img src="./assets/img/boton_verde.png" class="img-aling-fluid rounded-start" alt="12 - 17">
+      </div>
+    <div class="col-md-5">
+        <div class="card-body" id="card1">
+          <h5 class="card-title"><strong>${resp.name}</strong></h5>
+          <p class="card-text"></p>
+          <p class="card-text">${resp.name} ${resp.height} ${resp.mass}</div><small class="text-body-secondary"></div></small></p>
+        </div>
+    </div>`));
+    
+   
+    yield consultarAPI(`${url}/16?format=json`).then(resp => $("#lista3").append(`<div class="card md-3" style="max-width: 540px;">
+    <div class="row">
+      <div class="col-3">
+        <img src="./assets/img/boton_verde.png" class="img-aling-fluid rounded-start" alt="12 - 17">
+      </div>
+    <div class="col-md-5">
+        <div class="card-body" id="card1">
+          <h5 class="card-title"><strong>${resp.name}</strong></h5>
+          <p class="card-text"></p>
+          <p class="card-text">${resp.name} ${resp.height} ${resp.mass}</div><small class="text-body-secondary"></div></small></p>
+        </div>
+    </div>`));
+    
+    
+    yield consultarAPI(`${url}/17?format=json`).then(resp => $("#lista3").append(`<div class="card md-3" style="max-width: 540px;">
+    <div class="row">
+      <div class="col-3">
+        <img src="./assets/img/boton_verde.png" class="img-aling-fluid rounded-start" alt="12 - 17">
+      </div>
+    <div class="col-md-5">
+        <div class="card-body" id="card1">
+          <h5 class="card-title"><strong>${resp.name}</strong></h5>
+          <p class="card-text"></p>
+          <p class="card-text">${resp.name} ${resp.height} ${resp.mass}</div><small class="text-body-secondary"></div></small></p>
+        </div>
+    </div>`));
+    
 }
 
 
