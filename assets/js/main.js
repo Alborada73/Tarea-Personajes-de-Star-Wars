@@ -1,20 +1,27 @@
 const url = `https://swapi.dev/api/people`
 
 const consultarAPI = (url) => {
-    return new Promise((resolve, reject) => (
-        fetch(url)
-        .then(resp => resp.json())
-        .then(data => {console.log(data);resolve(data)
-         })
-    ))
-    
+    return new Promise(
+        (resolve, reject) => {
+            fetch(url)
+            .then(resp => resp.json())
+            .then(data => {
+                let {name, height, weight} = data;
+                console.log(name, height, weight);
+                resolve(data)
+            });
+        }
+
+    )
+              
 }
+    
 function* generador1(){
-    yield consultarAPI(`${url}/1?format=json`).then(resp => $("lista1").append(`<div>$(resp.name)</div>`));
-    yield consultarAPI(`${url}/2?format=json`).then(resp => $("lista1").append(`<div>$(resp.name)</div>`));
-    yield consultarAPI(`${url}/3?format=json`).then(resp => $("lista1").append(`<div>$(resp.name)</div>`));
-    yield consultarAPI(`${url}/4?format=json`).then(resp => $("lista1").append(`<div>$(resp.name)</div>`));
-    yield consultarAPI(`${url}/5?format=json`).then(resp => $("lista1").append(`<div>$(resp.name)</div>`));
+    yield consultarAPI(`${url}/1?format=json`).then(resp => $("#lista1").append(`<div class="card">${resp.name}${resp.height}${resp.weight}</div>`));
+    yield consultarAPI(`${url}/2?format=json`).then(resp => $("#lista1").append(`<div>${resp.name}</div>`));
+    yield consultarAPI(`${url}/3?format=json`).then(resp => $("#lista1").append(`<div>${resp.name}</div>`));
+    yield consultarAPI(`${url}/4?format=json`).then(resp => $("#lista1").append(`<div>${resp.name}</div>`));
+    yield consultarAPI(`${url}/5?format=json`).then(resp => $("#lista1").append(`<div>${resp.name}</div>`));
 }
 
 function* generador2(){
